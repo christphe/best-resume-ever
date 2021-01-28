@@ -81,7 +81,7 @@
               v-if="person.contact.github"
               class="section-link"
               :href="contactLinks.github">
-              <i class="section-link__icon fa fa-github"></i>{{ person.contact.github }}
+              <i class="section-link__icon fab fa-github"></i>{{ person.contact.github }}
             </a>
 
             <a

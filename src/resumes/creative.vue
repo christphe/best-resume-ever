@@ -46,7 +46,7 @@
           :href="contactLinks.github"
           class="external-link">
 
-          <i class="fa fa-github contact-icon"></i>
+          <i class="fab fa-github contact-icon"></i>
           <span class="block-marged txt-full-white">
             {{ person.contact.github }}
           </span>

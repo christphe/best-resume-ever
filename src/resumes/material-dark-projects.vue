@@ -55,7 +55,7 @@
     <a :href="'https://github.com/'+person.contact.github" target="_blank">
       <div class="item">
         <div class="icon">
-          <i class="fa fa-github"></i>
+          <i class="fab fa-github"></i>
         </div>
         <div class="text">
           <span>@{{person.contact.github}}</span>

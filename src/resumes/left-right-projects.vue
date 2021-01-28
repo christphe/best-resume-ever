@@ -42,7 +42,7 @@
         </tr>
         <tr>
           <td><a :href="'https://github.com/'+person.contact.github">https://github.com/{{person.contact.github}}</a></td>
-          <td><i class="fa fa-github" aria-hidden="true"></i></td>
+          <td><i class="fab fa-github" aria-hidden="true"></i></td>
         </tr>
       </table>
     </div>

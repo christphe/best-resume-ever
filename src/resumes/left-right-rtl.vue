@@ -41,7 +41,7 @@
           <td><a :href="person.contact.website">{{person.contact.website}}</a></td>
         </tr>
         <tr v-if="person.contact.github">
-          <td><i class="fa fa-github" aria-hidden="true"></i></td>
+          <td><i class="fab fa-github" aria-hidden="true"></i></td>
           <td><a :href="contactLinks.github">{{contactLinks.github}}</a></td>
         </tr>
       </table>
