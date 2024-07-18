@@ -274,7 +274,12 @@ export default Vue.component(name, getVueOptions(name));
 </script>
 
 <style lang="less" scoped>
-@accent-color: #91bed4;
+@gunmetal: #022b3aff;
+@teal: #1f7a8cff;
+@columbia-blue: #bfdbf7ff;
+@lavender-web: #e1e5f2ff;
+@white: #ffffffff;
+@accent-color: @gunmetal;
 
 .text-right {
   text-align: right;
@@ -366,8 +371,8 @@ export default Vue.component(name, getVueOptions(name));
   padding-top: 45px;
   text-align: left;
 
-  color: #294466;
-  background-color: @accent-color;
+  color: @gunmetal;
+  background-color: @lavender-web;
   overflow: hidden;
   display: block;
   z-index: 2;
@@ -579,10 +584,10 @@ a {
 }
 
 .skill-bar {
-  background-color: #294466;
+  background-color: @gunmetal;
   .skill-bar-content {
     height: 10px;
-    background-color: @accent-color;
+    background-color: @columbia-blue;
   }
 }
 
