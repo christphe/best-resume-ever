@@ -3,7 +3,7 @@ name:
   first: Christophe
   middle:
   last: Opoix
-about: Originellement développeur Java, je me suis ouvert tôt aux technologies liées au 
+about: Originellement développeur Java, je me suis ouvert tôt aux technologies liées au
        développement frontend et aux concepts DevOps.<br>
        <br>
        Evoluant au sein d'une équipe je partage mon temps entre architecture, process,
@@ -18,9 +18,15 @@ birth:
   location:
 
 experience:
+- company: Ultra
+  position: Senior Backend Developer
+  timeperiod: 2021 - 2024
+  description: Architecture backend, mise en place process livraison, ci, developpement, migrations, .<br>
+               <strong>NestJS/Rush/TypeScript/GitlabCI/Kubernetes</strong>
+
 - company: Dolist
   position: Expert Technique Frontend
-  timeperiod: depuis 2018
+  timeperiod: 2018 - 2021
   description: Architecture frontend, migration vue.js et assistance développeurs lors du développement de features du logiciel maison.<br>
                <strong>Angularjs/Vue.js/TypeScript/Jenkins/Docker</strong>
 
@@ -46,7 +52,7 @@ experience:
 - company: Logica - EDF
   position: Expert Technique Java
   timeperiod: 2011 - 2012
-  description: Expertise technique pour la reprise d'un projet. Mise en place des environnements lors de la réversibilité, 
+  description: Expertise technique pour la reprise d'un projet. Mise en place des environnements lors de la réversibilité,
                support développeur et analyse pour nouveaux lots applicatifs.
 
 - company: Logica
@@ -56,7 +62,7 @@ experience:
                technologies Java.
 
 education:
-- degree: Epitech 
+- degree: Epitech
   description: Expert en Technologies de l'Information, 2006
 
 # skill level goes 0 to 100
