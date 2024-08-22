@@ -21,7 +21,7 @@ experience:
 - company: Ultra
   position: Senior Backend Developer
   timeperiod: 2021 - 2024
-  description: Architecture backend, mise en place process livraison, ci, developpement, migrations, .<br>
+  description: Architecture backend, mise en place process livraison, ci, developpement, migrations.<br>
                <strong>NestJS/Rush/TypeScript/GitlabCI/Kubernetes</strong>
 
 - company: Dolist
@@ -90,7 +90,7 @@ hobbies:
   iconClass: fa fa-gamepad
 
 contact:
-  email: christophe.opoix@ffxmail.com
+  email: christophe.opoix@gmail.com
   phone: +33 6 95 02 82 13
   github: christphe
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
