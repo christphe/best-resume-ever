@@ -1,0 +1,98 @@
+/* #*/ export const PERSON = `
+name:
+  first: Christophe
+  middle:
+  last: Opoix
+about: Originellement développeur Java, je me suis ouvert tôt aux technologies liées au
+       développement frontend et aux concepts DevOps.<br>
+       <br>
+       Evoluant au sein d'une équipe je partage mon temps entre architecture, process,
+       support et développement.<br>
+       <br>
+       Je mets mon savoir technique et mon expérience au service des développeurs et
+       des projets.
+position: Développeur Sénior Fullstack
+
+birth:
+  year:
+  location:
+
+experience:
+- company: Ultra
+  position: Senior Backend Developer
+  timeperiod: 2021 - 2024
+  description: Architecture backend, mise en place process livraison, ci, developpement, migrations.<br>
+               <strong>NestJS/rush-js/TypeScript/GitlabCI/Kubernetes/Kafka/Graphql</strong>
+
+- company: Dolist
+  position: Expert Technique Frontend
+  timeperiod: 2018 - 2021
+  description: Architecture frontend, migration vue.js et assistance développeurs lors du développement de features du logiciel maison.<br>
+               <strong>Angularjs/Vue.js/TypeScript/Jenkins/Docker</strong>
+
+- company: SQLI - Téréga
+  position: Expert Technique
+  timeperiod: 2017 - 2018
+  description: Architecture et support technique aux développeurs sur une application orientée microservices.
+               <br><strong>Angular/TypeScript/AWS/Lambda/Jenkins/Docker</strong>
+
+- company: SQLI - Cellule Expertise / Moyens de Productions
+  position: Expert Technique
+  timeperiod: 2016 - 2017
+  description: Participation aux cellules expertise et moyens de production pour l’aide aux équipes projets sur des sujets spécifiques et la mise en place d’outils internes
+               <br><strong>Java/Spring/Hibernate/Angular/AWS/Jenkins/Docker</strong
+
+- company: SQLI - RTE
+  position: Expert Technique
+  timeperiod: 2013 - 2016
+  description: Mise en place de socles techniques front et back et support aux développeurs pour différentes applications.
+               <br>Analyse et développement des applications
+               <br><strong>Java/Spring/Hibernate/AngularJs/Esri/SQL/Jenkins</strong>
+
+- company: Logica - EDF
+  position: Expert Technique Java
+  timeperiod: 2011 - 2012
+  description: Expertise technique pour la reprise d'un projet. Mise en place des environnements lors de la réversibilité,
+               support développeur et analyse pour nouveaux lots applicatifs.
+
+- company: Logica
+  position: Analyste Développeur
+  timeperiod: 2006 - 2011
+  description: Développement et conception technique d'applications de gestion pour différents clients autour des
+               technologies Java.
+
+education:
+- degree: Epitech
+  description: Expert en Technologies de l'Information, 2006
+
+# skill level goes 0 to 100
+skills:
+- name: Vue.js
+  level: 80
+- name: Intégration Continue
+  level: 80
+- name: DevOps
+  level: 50
+- name: SQL
+  level: 70
+- name: Java
+  level: 90
+- name: TypeScript
+  level: 90
+knowledge:
+
+hobbies:
+- name: Escalade
+  iconClass: fa fa-mountain
+- name: Running
+  iconClass: fa fa-running
+- name: Game jams
+  iconClass: fa fa-gamepad
+
+contact:
+  email: christophe.opoix@gmail.com
+  phone: +33 6 95 02 82 13
+  github: christphe
+# en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
+lang: fr
+`

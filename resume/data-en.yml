@@ -1,0 +1,89 @@
+/* #*/ export const PERSON = `
+name:
+  first: Christophe
+  middle:
+  last: Opoix
+about: Originally a Java developer, I embraced early on frontend development technologies and DevOps concepts.<br>
+       <br>
+       Working within a team, I split my time between architecture, processes, support, and development.<br>
+       <br>
+       I use my technical knowledge and experience to support developers and projects.
+position: Fullstack Senior Developer
+
+birth:
+  year:
+  location:
+
+experience:
+- company: Ultra
+  position: Senior Backend Developer
+  timeperiod: 2021 - 2024
+  description: Backend architecture, implementation of delivery processes, CI, development, migrations.<br>
+               <strong>NestJS/rush-js/TypeScript/GitlabCI/Kubernetes/Kafka/Graphql</strong>
+
+- company: Dolist
+  position: Frontend Technical Expert
+  timeperiod: 2018 - 2021
+  description: Frontend architecture, Vue.js migration, and developer assistance during the development of in-house software features.<br>
+               <strong>Angularjs/Vue.js/TypeScript/Jenkins/Docker</strong>
+
+- company: SQLI - Téréga
+  position: Technical Expert
+  timeperiod: 2017 - 2018
+  description: Architecture and technical support for developers on a microservices-oriented application.
+               <br><strong>Angular/TypeScript/AWS/Lambda/Jenkins/Docker</strong>
+
+- company: SQLI - Expertise Team / Production
+  position: Technical Expert
+  timeperiod: 2016 - 2017
+  description: Participation in expertise and production groups to assist project teams on specific topics and the implementation of internal tools.
+               <br><strong>Java/Spring/Hibernate/Angular/AWS/Jenkins/Docker</strong>
+
+- company: SQLI - RTE
+  position: Technical Expert
+  timeperiod: 2013 - 2016
+  description: Implementation of frontend and backend technical foundations and support for developers on various applications.
+               <br>Analysis and development of applications
+               <br><strong>Java/Spring/Hibernate/AngularJs/Esri/SQL/Jenkins</strong>
+
+- company: Logica
+  position: Java Analyst Developer
+  timeperiod: 2006 - 2012
+  description: Development and technical design of management applications for various clients using Java technologies.
+               Technical expertise for project takeover
+
+education:
+- degree: Epitech
+  description: Master of Information Technology, 2006
+
+# skill level goes 0 to 100
+skills:
+- name: Vue.js
+  level: 80
+- name: Continuous Integration
+  level: 80
+- name: DevOps
+  level: 50
+- name: SQL
+  level: 70
+- name: Java
+  level: 90
+- name: TypeScript
+  level: 90
+knowledge:
+
+hobbies:
+- name: Climbing
+  iconClass: fa fa-mountain
+- name: Running
+  iconClass: fa fa-running
+- name: Game jams
+  iconClass: fa fa-gamepad
+
+contact:
+  email: christophe.opoix@gmail.com
+  phone: +33 6 95 02 82 13
+  github: christphe
+# en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
+lang: en
+`
