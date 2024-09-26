@@ -142,6 +142,22 @@
         </div>
       </router-link>
     </div>
+    <div class="preview">
+      <router-link v-bind:to="'/resume/graphene'">
+        <div class="preview-wrapper">
+          <img src="../assets/preview/resume-graphene.png" />
+          <span>green</span>
+        </div>
+      </router-link>
+    </div>
+    <div class="preview">
+      <router-link v-bind:to="'/resume/graphene-flat'">
+        <div class="preview-wrapper">
+          <img src="../assets/preview/resume-graphene-flat.png" />
+          <span>green</span>
+        </div>
+      </router-link>
+    </div>
   </div>
 </div>
 </template>
