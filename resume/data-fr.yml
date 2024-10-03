@@ -118,7 +118,12 @@ skills:
 - name: DevOps
 - name: SQL
 - name: Java
-knowledge:
+
+langs:
+  - lang: fr
+    level: native
+  - lang: en
+    level: fluent
 
 hobbies:
 - name: Escalade
