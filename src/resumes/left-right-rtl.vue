@@ -1,5 +1,5 @@
 <template>
-<div class="resume" id="resume1">
+<div class="resume" v-if="person" id="resume1">
   <div class="row text-center">
     <span class="name">{{person.name.first}} {{person.name.middle}} {{person.name.last}}</span>
   </div>

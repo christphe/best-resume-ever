@@ -1,5 +1,5 @@
 <template>
-  <div class="resume" id="resume2">
+  <div class="resume" v-if="person" id="resume2">
     <div class="left-column">
       <div>
         <div class="headline">

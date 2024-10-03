@@ -1,5 +1,5 @@
 <template>
-  <div class="resume">
+  <div class="resume" v-if="person">
     <div class="row header">
       <div class="name col-12">
         <span class="uppercase">{{ person.name.first }} {{ person.name.middle }} {{ person.name.last }} </span>

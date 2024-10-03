@@ -54,26 +54,28 @@ const convert = async () => {
     try {
         const fullDirectoryPath = path.join(__dirname, '../pdf/');
         const directories = getResumesFromDirectories();
-        directories.forEach(async (dir) => {
-            const browser = await puppeteer.launch({
-                args: ['--no-sandbox']
+        ['en', 'fr'].forEach(lang => {
+            directories.forEach(async (dir) => {
+                const browser = await puppeteer.launch({
+                    args: ['--no-sandbox']
+                });
+                const page = await browser.newPage();
+                await page.goto(`http://localhost:${config.dev.port}/#/resume/` + dir.name + '?lang=' + lang, {
+                    waitUntil: 'networkidle2'
+                });
+    
+                if (
+                    !fs.existsSync(fullDirectoryPath)
+                ) {
+                    fs.mkdirSync(fullDirectoryPath);
+                }
+                await page.pdf({
+                    path: fullDirectoryPath + dir.name + '-' + lang + '.pdf',
+                    format: 'A4'
+                });
+                await browser.close();
             });
-            const page = await browser.newPage();
-            await page.goto(`http://localhost:${config.dev.port}/#/resume/` + dir.name, {
-                waitUntil: 'networkidle2'
             });
-
-            if (
-                !fs.existsSync(fullDirectoryPath)
-            ) {
-                fs.mkdirSync(fullDirectoryPath);
-            }
-            await page.pdf({
-                path: fullDirectoryPath + dir.name + '.pdf',
-                format: 'A4'
-            });
-            await browser.close();
-        });
     } catch (err) {
         throw new Error(err);
     }

@@ -1,5 +1,5 @@
 <template>
-<div class="resume">
+<div class="resume" v-if="person">
   <div class="leftCol m_box">
     <div class="shadow"></div>
     <div class="heading" id="myselfpic">

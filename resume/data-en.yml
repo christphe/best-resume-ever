@@ -1,4 +1,3 @@
-/* #*/ export const PERSON = `
 name:
   first: Christophe
   middle:
@@ -135,4 +134,3 @@ contact:
   github: christphe
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
 lang: en
-`

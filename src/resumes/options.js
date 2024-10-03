@@ -1,8 +1,5 @@
 import yaml from 'js-yaml';
 import {
-    PERSON
-} from '../../resume/data.yml';
-import {
     terms
 } from '../terms';
 
@@ -12,11 +9,24 @@ function getVueOptions (name) {
         name: name,
         data () {
             return {
-                person: yaml.load(PERSON),
+                persons: {
+                    en: undefined,
+                    fr: undefined
+                },
                 terms: terms,
             };
         },
         computed: {
+            person() {
+                const validLangs = ['en', 'fr'];
+                const lang = validLangs.includes(this.$route.query.lang) ? this.$route.query.lang : 'en';
+                if (this.persons[lang]) {
+                    return this.persons[lang];
+                }
+                fetch('/resume/data-' + lang + '.yml').then(res => res.text()).then(text => this.persons[lang] = yaml.load(text));
+                return undefined;
+            },
+
             lang () {
                 const defaultLang = this.terms.en;
                 const useLang = this.terms[this.person.lang];
