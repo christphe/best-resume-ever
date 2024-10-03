@@ -14,7 +14,8 @@
     <div class="content">
       <div class="row contact-row">
         <div><i class="contact-icon far fa-envelope"></i> {{ person.contact.email }}</div>
-        <div><i class="contact-icon fa fa-phone"></i>{{ person.contact.phone }}</div>
+        <div><i class="contact-icon fa fa-phone"></i>&nbsp;{{ person.contact.phone }}</div>
+        <div><i class="contact-icon fa fa-home"></i>&nbsp;{{ person.location }}</div>
       </div>
       <div class="about-section section">
         <div class="section-title headline"><i class="fas fa-user"></i> {{ lang.about }}</div>
@@ -22,7 +23,7 @@
       </div>
       <div v-if="person.skills" class="skills-section section">
         <div class="section-title headline">
-          <i class="material-icons">done_all</i> {{ lang.skills }}
+          <i class="fa fa-flask"></i> {{ lang.skills }}
         </div>
         <div class="section-content row">
           <div v-for="(skill, index) in person.skills" :key="index" class="section-content__item col col-4">
@@ -33,7 +34,7 @@
         </div>
       </div>
       <div class="section experience-section">
-        <div class="section-title headline"><i class="fas fa-suitcase"></i> {{ lang.experience }}</div>
+        <div class="section-title headline"><i class="fas fa-history"></i> {{ lang.experience }}</div>
         <div class="section-content">
           <div v-for="(experience, index) in person.experience" :key="index" class="section-content__item">
             <div class="row section-title">
@@ -49,7 +50,7 @@
         </div>
       </div>
       <div class="education-section section">
-        <div class="section-title headline"><i class="material-icons">school</i> {{ lang.education }}</div>
+        <div class="section-title headline"><i class="fas fa-graduation-cap"></i> {{ lang.education }}</div>
         <div class="section-content">
           <div v-for="(education, index) in person.education" :key="index" class="section-content__item">
             <div class="row section-title">
@@ -73,7 +74,7 @@
 @columbia-blue: #bfdbf7ff;
 @lavender-web: #e1e5f2ff;
 @white: #ffffffff;
-@accent-color: @gunmetal;
+@accent-color: #294466;
 
 .resume {
   display: flex;
@@ -93,6 +94,8 @@
   background-color: @lavender-web;
   padding: 0.5cm 1cm;
   margin-top: 0.5cm;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 
   .name {
     font-size: 3em;
@@ -134,21 +137,14 @@
   }
 }
 
-.skills-section {
-  .section-content__item {
-    font-weight: bolder;
-    color: #294466;
-  }
-}
-
 .experience-section {
   .position {
-    color: #294466;
+    color: @accent-color;
     font-weight: bold;
   }
 
   .timeperiod {
-    color: #294466;
+    color: @accent-color;
     font-weight: bold;
   }
 
@@ -187,12 +183,12 @@
 
 .education-section {
   .degree {
-    color: #294466;
+    color: @accent-color;
     font-weight: bold;
   }
 
   .timeperiod {
-    color: #294466;
+    color: @accent-color;
     font-weight: bold;
   }
 
@@ -205,7 +201,7 @@
 }
 
 .headline {
-  color: #294466;
+  color: @accent-color;
   font-size: 1.3em;
   font-weight: bold;
 }
