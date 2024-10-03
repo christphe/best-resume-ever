@@ -18,8 +18,7 @@ function getVueOptions (name) {
         },
         computed: {
             person() {
-                const validLangs = ['en', 'fr'];
-                const lang = validLangs.includes(this.$route.query.lang) ? this.$route.query.lang : 'en';
+                const lang = this.$route.query.lang ? this.$route.query.lang : 'en';
                 if (this.persons[lang]) {
                     return this.persons[lang];
                 }

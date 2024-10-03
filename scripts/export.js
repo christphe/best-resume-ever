@@ -54,7 +54,7 @@ const convert = async () => {
     try {
         const fullDirectoryPath = path.join(__dirname, '../pdf/');
         const directories = getResumesFromDirectories();
-        ['en', 'fr'].forEach(lang => {
+        getLangsFromData().forEach(lang => {
             directories.forEach(async (dir) => {
                 const browser = await puppeteer.launch({
                     args: ['--no-sandbox']
@@ -93,6 +93,17 @@ const getResumesFromDirectories = () => {
         };
     });
 };
+
+function getLangsFromData() {
+  const langs = fs
+    .readdirSync(path.join(__dirname, "../resume"))
+    .map(file => {
+      const dataYamlMatchResult = file.match(/data\-(.+)\.yml/);
+      return dataYamlMatchResult ? dataYamlMatchResult[1] : null;
+    })
+    .filter(item => item != null);
+  return langs;
+}
 
 const getDirectories = () => {
     const srcpath = path.join(__dirname, '../src/resumes');
