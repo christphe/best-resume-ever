@@ -158,7 +158,7 @@
 
   .section-content__item {
     padding-top: 0.5cm;
-    padding-bottom: 0.5cm;
+    padding-bottom: 0.1cm;
     page-break-after: auto;
     page-break-before: auto;
     page-break-inside: avoid;
@@ -193,7 +193,7 @@
   }
 
   .section-content__item {
-    margin-bottom: 1cm;
+    margin-bottom: 0.5cm;
     page-break-after: auto;
     page-break-before: auto;
     page-break-inside: avoid;
